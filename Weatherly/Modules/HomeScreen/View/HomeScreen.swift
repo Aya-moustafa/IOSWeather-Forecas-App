@@ -38,7 +38,6 @@ struct HomeScreen: View {
                         
                         LazyVStack {
                             ForEach(weather.forecast.forecastday ?? []) { forecastDay in
-                                
                                     ForecastDayRow(dayForecast: forecastDay)
                                         .padding(.vertical, 5)
                                         .background(Color.clear)
