@@ -19,6 +19,7 @@
 		00927D232BFA4B11003690EF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 00927D222BFA4B11003690EF /* Alamofire */; };
 		00927D262BFA4C41003690EF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 00927D252BFA4C41003690EF /* Kingfisher */; };
 		0094CBD62BFB8347008D61FA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094CBD52BFB8347008D61FA /* LocationManager.swift */; };
+		0098C50B2C016BC7003CA804 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0098C50A2C016BC7003CA804 /* SecondViewModel.swift */; };
 		0099DCE32BFBD0B900311B84 /* HandleTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099DCE22BFBD0B900311B84 /* HandleTheme.swift */; };
 		009D10D72C016849003538A4 /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D10D62C016849003538A4 /* SecondScreen.swift */; };
 		00A312672BFC77960057778F /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A312662BFC77960057778F /* HomeHeader.swift */; };
@@ -38,6 +39,7 @@
 		00927D1F2BFA49FE003690EF /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiService.swift; path = "../../../../../Downloads/SportsSync/SportsSync/Model/Network Service/ApiService.swift"; sourceTree = "<group>"; };
 		0094CBD52BFB8347008D61FA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		0094CBD72BFB8729008D61FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0098C50A2C016BC7003CA804 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
 		0099DCE22BFBD0B900311B84 /* HandleTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleTheme.swift; sourceTree = "<group>"; };
 		009D10D62C016849003538A4 /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
 		00A312662BFC77960057778F /* HomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		009D10D42C016815003538A4 /* DetailsScreen */ = {
 			isa = PBXGroup;
 			children = (
+				009D10D82C0169DA003538A4 /* ViewModel */,
 				009D10D52C016825003538A4 /* View */,
 			);
 			path = DetailsScreen;
@@ -181,6 +184,14 @@
 				009D10D62C016849003538A4 /* SecondScreen.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		009D10D82C0169DA003538A4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0098C50A2C016BC7003CA804 /* SecondViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +278,7 @@
 				0099DCE32BFBD0B900311B84 /* HandleTheme.swift in Sources */,
 				00A312672BFC77960057778F /* HomeHeader.swift in Sources */,
 				009D10D72C016849003538A4 /* SecondScreen.swift in Sources */,
+				0098C50B2C016BC7003CA804 /* SecondViewModel.swift in Sources */,
 				0067FB6F2BFA1FB90073054E /* Weather.swift in Sources */,
 				00A312692BFC78640057778F /* Constants.swift in Sources */,
 				008C27752BFA8F130094C0A9 /* ForecastDayRow.swift in Sources */,
