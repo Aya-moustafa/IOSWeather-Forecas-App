@@ -20,6 +20,7 @@
 		00927D262BFA4C41003690EF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 00927D252BFA4C41003690EF /* Kingfisher */; };
 		0094CBD62BFB8347008D61FA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094CBD52BFB8347008D61FA /* LocationManager.swift */; };
 		0099DCE32BFBD0B900311B84 /* HandleTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099DCE22BFBD0B900311B84 /* HandleTheme.swift */; };
+		009D10D32C016665003538A4 /* DetailsScreen in Resources */ = {isa = PBXBuildFile; fileRef = 009D10D22C016664003538A4 /* DetailsScreen */; };
 		00A312672BFC77960057778F /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A312662BFC77960057778F /* HomeHeader.swift */; };
 		00A312692BFC78640057778F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A312682BFC78640057778F /* Constants.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		0094CBD52BFB8347008D61FA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		0094CBD72BFB8729008D61FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0099DCE22BFBD0B900311B84 /* HandleTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleTheme.swift; sourceTree = "<group>"; };
+		009D10D22C016664003538A4 /* DetailsScreen */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DetailsScreen; path = ../../../../../Downloads/Weatherly/Weatherly/Modules/DetailsScreen; sourceTree = "<group>"; };
 		00A312662BFC77960057778F /* HomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
 		00A312682BFC78640057778F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +117,7 @@
 		0067FB672BFA1E390073054E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				009D10D22C016664003538A4 /* DetailsScreen */,
 				0067FB682BFA1E420073054E /* HomeScreen */,
 			);
 			path = Modules;
@@ -232,6 +235,7 @@
 			files = (
 				0067FB5F2BFA1E0E0073054E /* Preview Assets.xcassets in Resources */,
 				0067FB5C2BFA1E0E0073054E /* Assets.xcassets in Resources */,
+				009D10D32C016665003538A4 /* DetailsScreen in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

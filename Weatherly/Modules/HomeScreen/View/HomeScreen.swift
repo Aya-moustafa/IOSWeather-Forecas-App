@@ -49,8 +49,18 @@ struct HomeScreen: View {
                             }
                         }
                         .listRowBackground(Color.clear)
-                        
-                        .listStyle(PlainListStyle())                        
+                        .listStyle(PlainListStyle())
+                        ScrollView {
+                            LazyVGrid(columns: columns, alignment: .center, spacing: 30) {
+                                if let current = weather.current {
+                                    WeatherGridItem(title: "VISIBILITY", value: "\(String(format: "%.1f", current.visKM ?? 0.0)) Km")
+                                    WeatherGridItem(title: "HUMIDITY", value: "\(String(format: "%.1f", current.humidity ?? 0.0)) %")
+                                    WeatherGridItem(title: "FEELS LIKE", value: "\(String(format: "%.1f", current.feelslikeC ?? 0.0)) °C")
+                                    WeatherGridItem(title: "PRESSURE", value: "\(String(format: "%.1f", current.pressureMB ?? 0.0)) mb")
+                                }
+                            }
+                            .padding()
+                        }
                     }else{
                         Text("unkown")
                     }
@@ -77,6 +87,24 @@ struct WeatherGridItem : View {
                 .font(.system(size: 16))
                 .foregroundColor(theme.isTime ? .secondary : .white)
                 .fontWeight(.bold)
+                .padding(.trailing,10)
+        }
+        .padding()
+    }
+}
+
+struct WeatherGridItem : View {
+    let title: String
+    let value: String
+    @EnvironmentObject var theme: HandleThem
+    var body: some View {
+        VStack(alignment: .leading, spacing: 5) {
+            Text(title)
+                .font(.system(size: 20))
+                .foregroundColor(theme.isTime ? .black : .white)
+            Text(value)
+                .font(.system(size: 16))
+                .foregroundColor(theme.isTime ? .black : .white)
                 .padding(.trailing,10)
         }
         .padding()
