@@ -38,10 +38,11 @@ struct HomeScreen: View {
                         
                         LazyVStack {
                             ForEach(weather.forecast.forecastday ?? []) { forecastDay in
+                                NavigationLink(destination: SecondScreen(selectedDay: forecastDay)) {
                                     ForecastDayRow(dayForecast: forecastDay)
                                         .padding(.vertical, 5)
                                         .background(Color.clear)
-                                
+                                }
                                 Divider()
                                     .background(Color.black)
                                     .padding(.leading,50)
@@ -87,24 +88,6 @@ struct WeatherGridItem : View {
                 .font(.system(size: 16))
                 .foregroundColor(theme.isTime ? .secondary : .white)
                 .fontWeight(.bold)
-                .padding(.trailing,10)
-        }
-        .padding()
-    }
-}
-
-struct WeatherGridItem : View {
-    let title: String
-    let value: String
-    @EnvironmentObject var theme: HandleThem
-    var body: some View {
-        VStack(alignment: .leading, spacing: 5) {
-            Text(title)
-                .font(.system(size: 20))
-                .foregroundColor(theme.isTime ? .black : .white)
-            Text(value)
-                .font(.system(size: 16))
-                .foregroundColor(theme.isTime ? .black : .white)
                 .padding(.trailing,10)
         }
         .padding()
